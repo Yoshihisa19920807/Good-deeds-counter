@@ -14,3 +14,12 @@ CREATE TABLE IF NOT EXISTS public.users (
   created_at timestamp without time zone,
   updated_at timestamp without time zone
 );
+
+CREATE TABLE IF NOT EXISTS public.titles (
+  id integer not null,
+  name character varying(255),
+  required_level integer,
+  image text,
+  created_at timestamp without time zone,
+  updated_at timestamp without time zone
+);
