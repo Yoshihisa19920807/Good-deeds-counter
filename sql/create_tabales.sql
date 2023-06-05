@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS public.good_deeds (
 
 CREATE TABLE IF NOT EXISTS public.users (
   id integer not null,
+  name character varying(255),
   email character varying(255),
   password character varying(255),
   created_at timestamp without time zone,
